@@ -1,3 +1,107 @@
+header {
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
+}
+header a, header i {
+  color: #be8d89;
+  margin-right: 10px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.logobox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logobox h1 {
+  font-size: 25px;
+  letter-spacing: 1.2px;
+  color: #be8d89;
+  font-family: "Oleo Script", sans-serif;
+}
+.logobox i {
+  font-size: 25px;
+}
+
+header .navbar a:active,
+header .navbar a:hover {
+  background-color: #be8d89;
+  color: white;
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  height: 35px;
+  line-height: 23px;
+  width: 35px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  background-color: #be8d89;
+  color: white;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 12px;
+  }
+
+  header {
+    padding: 25px;
+  }
+}
+@media (max-width: 768px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 20px;
+    margin: 5px;
+    background: white;
+  }
+}
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;

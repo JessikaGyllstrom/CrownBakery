@@ -1,0 +1,91 @@
+header {
+    @include boxshadow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    a, i {
+        color: $blush;
+        margin-right: 10px;
+        padding: 7px;
+        border-radius: 5px;
+    }
+}
+.logobox {
+    display: inline-flex;
+    align-items: center;
+    h1 {
+        font-size: 25px;
+        letter-spacing: 1.2px;
+        color: $blush;
+        font-family: $logo-font;
+    }
+    i {
+        font-size: 25px;
+    }
+}
+header .navbar a:active, 
+header .navbar a:hover {
+        background-color: $blush;
+        color: white;
+}
+header .icons i, 
+header .icons a {
+    cursor: pointer;
+    height: 35px;
+    line-height: 23px;
+    width: 35px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+
+}
+header .icons i:hover, 
+header .icons a:hover {
+    background-color: $blush;
+    color: white;
+    transform: rotate(360deg);
+}
+header .icons #menu-bars {
+    display: none;
+} 
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        padding: 25px;
+    }
+}
+@media (max-width:768px) {
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    header .navbar a {
+        display: block;
+        padding: 20px;
+        margin: 5px;
+        background: white;
+    }
+}
