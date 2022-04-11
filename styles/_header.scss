@@ -68,6 +68,10 @@ header .icons #menu-bars {
     justify-content: center;
     padding: 10px;
 }
+#search-form.active {
+    top: 0;
+}
+
 #search-form #search-box {
     width: 200px;
     padding: 5px;
@@ -102,10 +106,6 @@ header .icons #menu-bars {
 }
 
 
-
-
-
-
 @media (max-width:991px) {
     html {
         font-size: 12px;
@@ -136,5 +136,9 @@ header .icons #menu-bars {
         padding: 20px;
         margin: 5px;
         background: white;
+    }
+    #search-form #search-box{
+        width:90%;
+        margin: 10px;
     }
 }

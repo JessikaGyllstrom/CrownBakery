@@ -91,6 +91,10 @@ header .icons #menu-bars {
   padding: 10px;
 }
 
+#search-form.active {
+  top: 0;
+}
+
 #search-form #search-box {
   width: 200px;
   padding: 5px;
@@ -186,6 +190,11 @@ header .icons #menu-bars {
     margin: 5px;
     background: white;
   }
+
+  #search-form #search-box {
+    width: 90%;
+    margin: 10px;
+  }
 }
 * {
   font-family: "Montserrat", sans-serif;
@@ -206,4 +215,8 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 20px;
   scroll-behavior: smooth;
+}
+
+section {
+  padding: 20px 30px 20px 30px;
 }
