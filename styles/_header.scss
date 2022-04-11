@@ -4,7 +4,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: 10px 40px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,6 +34,7 @@ header .navbar a:hover {
         background-color: $blush;
         color: white;
 }
+
 header .icons i, 
 header .icons a {
     cursor: pointer;
@@ -54,7 +55,51 @@ header .icons a:hover {
 header .icons #menu-bars {
     display: none;
 } 
-
+#search-form {
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#search-form #search-box {
+    width: 200px;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    text-transform: none;
+    background: none;
+    border-bottom: 1px solid white;
+}
+#search-form #search-box::placeholder {
+    color: white;
+    letter-spacing: 1.2px;
+}
+#search-form #search-box::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+#search-form label {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+#search-form label:hover {
+    color: $blush;
+}
+#search-form #close {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    top: 27px;
+    right: 0;
+    padding-right: 20px;
+}
 
 
 
@@ -73,14 +118,18 @@ header .icons #menu-bars {
     header .icons #menu-bars {
         display: inline-block;
     }
-    header .navbar {
+    header .navbar{
         position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: white;
-        padding: 10px;
+        top:100%; 
+        left:0; 
+        right:0;
+        background: white;
+        padding:10px;
         text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     header .navbar a {
         display: block;
