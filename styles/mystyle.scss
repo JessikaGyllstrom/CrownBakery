@@ -1,0 +1,25 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+@import 'header';
+
+
+
+
+* {
+    font-family: $main-font;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    color: $blackish;
+}
+html {
+    font-size: 17px;
+    overflow-x: hidden;
+    scroll-padding-top: 20px;
+    scroll-behavior: smooth;
+}
