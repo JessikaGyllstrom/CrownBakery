@@ -1,0 +1,6 @@
+.about h3 {
+    @include heading;
+}
+.about .sub-heading span {
+    color: $blush;
+}

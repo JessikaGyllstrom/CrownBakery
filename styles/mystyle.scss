@@ -2,6 +2,11 @@
 @import 'colors';
 @import 'mixins';
 @import 'header';
+@import 'home';
+@import 'new';
+@import 'about';
+
+
 
 
 
@@ -24,5 +29,19 @@ html {
     scroll-behavior: smooth;
 }
 section {
-    padding: 20px 30px 20px 30px;
+    margin-top: 20px;
+    padding: 40px 30px 20px 30px;
+}
+.btn {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: $blush;
+    padding: 9px;
+    font-weight: 400;
+}
+.btn:hover {
+    background-color: $blackish;
 }

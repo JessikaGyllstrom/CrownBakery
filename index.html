@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- link to fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <!-- link to icons -->
     <script src="https://kit.fontawesome.com/bead1f6d12.js" crossorigin="anonymous"></script>
     <!--link to css -->
@@ -21,7 +22,7 @@
         </div>
         <nav class="navbar">
             <a class="active" href="#home">home</a>
-            <a href="#bestsellers">bestsellers</a>
+            <a href="#new">new</a>
             <a href="#about">about</a>
             <a href="#menu">menu</a>
             <a href="#reviews">reviews</a>
@@ -44,54 +45,161 @@
     <!-- search end -->
     <!-- home start -->
     <section class="home" id="home">
-        <div class="container">
-            <div class="wrapper">
-                <div class="slide">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">         
                     <div class="content">
-                        <span>Indulge yourself with a sweet delight</span>
-                        <h3>Strawberry Doughnut</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Reiciendis, officia!</p>
-                        <a href="#" class="btn"></a>
-                    </div>
-                    <div class="image">
-                        <img src="/images/doughnut.png" alt="doughnut">
-                    </div>
+                    <span>Indulge yourself with sweet delights</span>
+                    <h3>Strawberry Doughnut</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+                    <a href="#" class="btn">Order Now</a>
                 </div>
-                <div class="slide">
-                    <div class="content">
-                        <span>Indulge yourself with a sweet delight</span>
-                        <h3>Strawberry Doughnut</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Reiciendis, officia!</p>
-                        <a href="#" class="btn"></a>
-                    </div>
-                    <div class="image">
-                        <img src="/images/cupcake.jpg" alt="cupcake">
-                    </div>
+                <div class="image">
+                    <img src="images/doughnut.png" alt="">
                 </div>
-                <div class="slide">
-                    <div class="content">
-                        <span>Indulge yourself with a sweet delight</span>
-                        <h3>Strawberry Doughnut</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Reiciendis, officia!</p>
-                        <a href="#" class="btn"></a>
-                    </div>
-                    <div class="image">
-                        <img src="/images/cake1" alt="cake">
-                    </div>
+            </div>
+
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- home end -->
+    <section class="new" id="new">
+        <h3 class="sub-heading"><span>New</span> Products</h3>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/macaroon.png">
+                <h4>Macaroons</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-
-
-
-
+                <span>$2.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/cake3.png">
+                <h4>Vanilla Cake</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$2.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/tiramisu.png">
+                <h4>Tiramisu Cake</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$22.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/cake6.png">
+                <h4>Glaced Cake</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>$22.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/cupcake3.png">
+                <h4>Hazelnut Cupcake</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>$3.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/cheesecake2.png">
+                <h4>Strawberry Cheesecake</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$5.99</span>
+                <a href="#" class="btn">add to cart</a>
             </div>
         </div>
     </section>
-    <!-- home end -->
+    <!-- new section end -->
+    <!-- about section start -->
+    <section class="about" id="about">
+        <h3 class="sub-heading"><span>About</span> Us</h3>
+        <div class="row">
+            <div class="image">
+                <img src="/images/macaroon.jpg" alt="macaroon">
+            </div>
+            <div class="content">
+                <h3>Perfecting the art of making pastries since 1991</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nemo tempora laboriosam nesciunt commodi cupiditate ipsa 
+                    provident dolore nulla sed aut. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>home delivery</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>easy payment</span>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-shield-check"></i>
+                    <span>taste guarantee</span>
+                </div>
+            </div>
+            <a href="#" class="btn">learn more</a>
+        </div>
 
 
+    </section>
+    <!-- about section end -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/scripts/script.js"></script>
 </body>
 </html>
