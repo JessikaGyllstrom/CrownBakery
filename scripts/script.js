@@ -31,3 +31,4 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+  $('.bnr:first-child').append('<span><b></b><b></b><i></i><i></i></span>');

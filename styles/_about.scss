@@ -1,6 +1,54 @@
 .about h3 {
     @include heading;
 }
+.about .heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 .about .sub-heading span {
     color: $blush;
 }
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+.about .row .image {
+    flex: 1 1 400px;
+    padding-left: 30px;
+}
+.about .row .content {
+    flex: 1 1 300px;
+    padding-left: 30px;
+}
+.about .row .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about .row .content h4 {
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    width: 70%;
+}
+.about .row .content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+.about .row .content .icons i {
+    margin-bottom: 10px;
+    color: $blush;
+    font-size: 23px;
+}
+.about .row .content .icons i:hover {
+    color: $blackish;
+    transform: rotate(360deg);
+}
+
+
+
+
