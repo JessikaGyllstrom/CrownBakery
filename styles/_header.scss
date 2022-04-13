@@ -5,7 +5,7 @@ header {
     left: 0;
     right: 0;
     padding: 10px 40px 10px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
@@ -105,6 +105,44 @@ header .icons #menu-bars {
     padding-right: 20px;
 }
 
+.mydiv {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    overflow: hidden;
+    max-width: 350px;
+    background-color: $blush;
+    color: $blackish;
+    padding: 20px;
+    gap: 15px;
+    right: 10px;
+    display: none;
+}
+.mydiv .cart-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.mydiv .cart-item h3 {
+    padding-right: 25px;
+}
+.mydiv img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: 1px solid white;
+}
+.mydiv .cart-button {
+    display: flex;
+    justify-content: center;
+}
+.mydiv .cart-button .btn {
+    background-color: $blackish;
+}
 
 @media (max-width:991px) {
     html {

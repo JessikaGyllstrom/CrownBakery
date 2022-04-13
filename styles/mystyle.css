@@ -6,9 +6,9 @@ header {
   left: 0;
   right: 0;
   padding: 10px 40px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -152,6 +152,66 @@ header .icons #menu-bars {
   top: 27px;
   right: 0;
   padding-right: 20px;
+}
+
+.mydiv {
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 80px;
+  overflow: hidden;
+  max-width: 350px;
+  background-color: rosybrown;
+  color: #3c2a2a;
+  padding: 20px;
+  gap: 15px;
+  right: 10px;
+  display: none;
+}
+
+.mydiv .cart-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.mydiv .cart-item h3 {
+  padding-right: 25px;
+}
+
+.mydiv img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: 1px solid white;
+}
+
+.mydiv .cart-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mydiv .cart-button .btn {
+  background-color: #3c2a2a;
 }
 
 @media (max-width: 991px) {
@@ -744,8 +804,8 @@ header .icons #menu-bars {
 }
 
 input, textarea {
-  background-color: #eee;
-  opacity: 0.8;
+  background-color: white;
+  opacity: 0.9;
   border: none;
   border-radius: 10px;
   padding: 12px 15px;
@@ -871,7 +931,7 @@ footer .content .link-boxes .box {
   font-size: 15px;
   color: #3c2a2a;
   margin-top: 5px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .link-boxes .input-box input::-webkit-input-placeholder {
@@ -905,6 +965,10 @@ footer .content .link-boxes .box {
 .link-boxes .input-box .btn:hover {
   background-color: white;
   color: #3c2a2a;
+}
+
+.link-boxes .input-box input:focus {
+  opacity: 1;
 }
 
 footer .bottom-details {

@@ -68,7 +68,7 @@ footer .content .link-boxes .box{
     font-size: 15px;
     color: $blackish;
     margin-top: 5px;
-    opacity: 0.8;    
+    opacity: 0.9;    
 }
 .link-boxes .input-box input::placeholder{
     font-size: 14px;
@@ -84,11 +84,14 @@ footer .content .link-boxes .box{
     background-color: white;
     color: $blackish;
 }
+.link-boxes .input-box input:focus {
+    opacity: 1;
+}
 footer .bottom-details{
     width: 100%;
     background: $blush;
 }
-footer .bottom-details .bottom_text{
+footer .bottom-details .bottom_text {
     max-width: 1250px;
     margin: auto;
     padding: 20px 40px;
