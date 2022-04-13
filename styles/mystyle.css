@@ -308,6 +308,15 @@ header .icons #menu-bars {
   color: rosybrown;
 }
 
+.new .new-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .new .box-container .box {
   padding: 15px;
   border-radius: 10px;
@@ -322,8 +331,7 @@ header .icons #menu-bars {
 .new .box-container .box .fa-heart,
 .new .box-container .box .fa-eye {
   position: absolute;
-  top: 20px;
-  background: white;
+  top: 10px;
   height: 20px;
   width: 20px;
   line-height: 20px;
@@ -340,19 +348,11 @@ header .icons #menu-bars {
 }
 
 .new .box-container .box .fa-heart {
-  right: -47px;
+  right: 15px;
 }
 
 .new .box-container .box .fa-eye {
-  right: -20px;
-}
-
-.new .box-container .box:hover .fa-heart {
-  right: 47px;
-}
-
-.new .box-container .box:hover .fa-eye {
-  right: 20px;
+  left: 15px;
 }
 
 .new .box-container .box img {
@@ -360,6 +360,15 @@ header .icons #menu-bars {
   border-radius: 50%;
   height: 180px;
   width: 180px;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+.new .box-container .box img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.8;
+  transition: 0.8;
 }
 
 .new .box-container .box h4 {
@@ -367,6 +376,7 @@ header .icons #menu-bars {
 }
 
 .new .box-container {
+  width: 80%;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -466,6 +476,102 @@ header .icons #menu-bars {
   color: #3c2a2a;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.menu h3 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+.menu .sub-heading span {
+  color: rosybrown;
+}
+
+.menu .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .box-container .box {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1.5px solid rosybrown;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu .box-container .box .fa-heart,
+.menu .box-container .box .fa-eye {
+  position: absolute;
+  top: 10px;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  border-radius: 50%;
+  opacity: 0.7;
+  color: rosybrown;
+  padding: 1px;
+}
+
+.menu .box-container .box .fa-heart:hover,
+.menu .box-container .box .fa-eye:hover {
+  color: #3c2a2a;
+}
+
+.menu .box-container .box .fa-heart {
+  right: 15px;
+}
+
+.menu .box-container .box .fa-eye {
+  left: 15px;
+}
+
+.menu .box-container .box img {
+  width: 100%;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+.menu .box-container .box img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.8;
+  transition: 0.8;
+}
+
+.menu .box-container .box h4 {
+  font-weight: 500;
+}
+
+.menu .box-container {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.menu .box-container .stars i {
+  font-size: 12px;
+}
+
+.menu .box-container .btn {
+  font-size: 14px;
+  height: auto;
 }
 
 * {
