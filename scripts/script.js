@@ -11,6 +11,15 @@ function showDiv() {
     x.style.display = "none";
   }
 }
+function showFavourites() {
+  //document.getElementById("myDIV").style.display = "block";
+  var y = document.getElementById("favourites");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
 menu.onclick = () => {
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');

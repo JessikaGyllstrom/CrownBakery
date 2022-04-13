@@ -20,7 +20,7 @@
     <!-- header start -->
     <header>
         <div class="logobox">
-            <a href="#" class="logo"><i class="fa-solid fa-crown"></i></a>
+            <a href="#home" class="logo"><i class="fa-solid fa-crown"></i></a>
             <h1>Crown Bakery</h1>
         </div>
         <nav class="navbar">
@@ -34,9 +34,10 @@
         <div class="icons">
             <i class="fa-solid fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-heart" onclick=" showFavourites()"></a>
             <a href="#" class="fas fa-shopping-cart" id="cart-btn" onclick="showDiv()"></a>
         </div>
+        
         <div class ="mydiv" id="myDIV">
             <div class="cart-item">
                 <img src="images/cake5.png" alt="cappuccino">
@@ -70,10 +71,54 @@
                 </div>
                 <span class="fas fa-times"></span>
             </div>
-            <div class="cart-button">
-                <a href="#" class="btn">checkout now</a>
+        </div>
+
+        <div class ="favourites" id="favourites">
+            <div class="favourites-item">
+                <img src="images/cake5.png" alt="cappuccino">
+                <div class="favourites-content">
+                    <h3>Mousse Cake</h3>
+                    <div class="price">$2.99/-</div>
+                </div>
+                <div class="favourites-icons">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
             </div>
-    </div>
+            <div class="favourites-item">
+                <img src="images/cheesecake.png" alt="cheesecake">
+                <div class="content">
+                    <h3>Cheesecake</h3>
+                    <div class="price">$3.99/-</div>
+                </div>
+                <div class="favourites-icons">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="favourites-item">
+                <img src="images/cupcake5.png" alt="cupcake">
+                <div class="favourites-content">
+                    <h3>Cupcake</h3>
+                    <div class="price">$2.99/-</div>
+                </div>
+                <div class="favourites-icons">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="favourites-item">
+                <img src="images/doughnut.jpg" alt="doughnut">
+                <div class="content">
+                    <h3>Doughnut</h3>
+                    <div class="price">$2.99/-</div>
+                </div>
+                <div class="favourites-icons">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- header end -->
     <!-- search start -->

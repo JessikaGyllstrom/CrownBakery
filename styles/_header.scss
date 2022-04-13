@@ -144,6 +144,51 @@ header .icons #menu-bars {
     background-color: $blackish;
 }
 
+.favourites {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    overflow: hidden;
+    max-width: 400px;
+    background-color: $blush;
+    color: $blackish;
+    padding: 20px;
+    gap: 15px;
+    right: 10px;
+    display: none;
+}
+.favourites .favourites-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.favourites .favourites-item h3 {
+    padding-right: 25px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.favourites img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: 1px solid white;
+}
+.fa-cart-arrow-down {
+    padding-right: 30px;
+}
+.favourites-icons {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.favourites-icons i {
+    color: $blackish;
+}
+
 @media (max-width:991px) {
     html {
         font-size: 12px;
