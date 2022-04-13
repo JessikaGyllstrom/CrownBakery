@@ -3,7 +3,7 @@
     @include heading;
 }
 .menu .sub-heading span {
-    color: $blush;
+    color: white
 }
 .menu .menu-container {
     display: flex;
@@ -58,7 +58,7 @@
     font-weight: 500;
 }
 .menu .box-container {
-    width: 80%;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;

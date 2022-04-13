@@ -1,14 +1,3 @@
-.about h3 {
-    @include heading;
-}
-.about .heading {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.about .sub-heading span {
-    color: $blush;
-}
 .about .row {
     display: flex;
     flex-wrap: wrap;

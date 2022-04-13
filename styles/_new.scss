@@ -1,8 +1,22 @@
-.new h3 {
+.banner .sub-heading h3 {
     @include heading;
+    font-size: 25px;
 }
-.new .sub-heading span {
-    color: $blush;
+.sub-heading {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sub-heading span {
+    color: white;
+}
+.banner {
+    height: 130px;
+    position: relative;
+    text-align: center;
+    min-width: 800px;
+
 }
 .new .new-container {
     display: flex;
