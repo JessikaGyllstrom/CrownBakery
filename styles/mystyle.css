@@ -569,6 +569,83 @@ header .icons #menu-bars {
   height: auto;
 }
 
+.reviews .reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews-card {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.reviews .reviews-container .reviews-content {
+  padding: 20px;
+  border: 1px solid rosybrown;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+  position: relative;
+}
+
+.reviews .reviews-container .fa-quote-right {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 30px;
+  color: rosybrown;
+  opacity: 0.5;
+}
+
+.reviews .reviews-container .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.reviews .reviews-container .user img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 12px;
+}
+
+.reviews .reviews-container .user h3 {
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.reviews .reviews-container .user i {
+  font-size: 14px;
+  color: rosybrown;
+}
+
+.reviews .reviews-container .user .stars {
+  padding-top: 10px;
+}
+
+.reviews .reviews-container p {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: center;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
